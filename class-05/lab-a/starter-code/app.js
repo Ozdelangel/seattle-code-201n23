@@ -120,11 +120,12 @@ function multiplyArray(multArr) { //eslint-disable-line
 let a = multArr[0];
 let b = multArr[1];
 let c = multArr[2];
-let x = multiply(a,b,);
-let x2 = multiply(x[0],c);
+let x = multiply(a,b,[0]);
+let x2 = multiply(x[0],c,[0]);
 let message = `The numbers ${a},${b},${c} have a product of ${x2[0]}.`;
 console.log(x,x2, message);
-return(x2[0], message);
+let finalArray = [x2[0],message]
+return(finalArray);
 
 }
 
